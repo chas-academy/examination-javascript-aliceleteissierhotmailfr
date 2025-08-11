@@ -60,7 +60,7 @@ expenseBtn.addEventListener("click", () => {
     incomeList.innerHTML= ""
 for (const item of income){
     const li = document.createElement("li")
-    li.textContent = `${item.description}, ${item.amount} kr`
+    li.textContent = `${item.description}, ${item.amount} kr (Inkomst)`
     incomeList.appendChild(li)
  }  
 }
@@ -69,7 +69,7 @@ for (const item of income){
  expenseList.innerHTML = ""
 for (const item of expense){
     const li = document.createElement("li")
-    li.textContent = `${item.description}, ${item.amount} kr`
+    li.textContent = `${item.description}, ${item.amount} kr (Utgift)`
     expenseList.appendChild(li)
  }
 }
